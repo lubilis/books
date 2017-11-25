@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- animations -->
+    <integer name="default_animation_duration_long_long">500</integer>
+    <integer name="default_animation_duration_long">300</integer>
+    <integer name="default_animation_duration_medium">200</integer>
+    <integer name="default_animation_duration_short">100</integer>
+    <integer name="default_animation_offset_long">2000</integer>
+    <integer name="default_animation_offset_medium">1000</integer>
+
+</resources>

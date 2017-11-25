@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -13,6 +12,7 @@ import java.util.ArrayList;
 import app.test.com.testapp.R;
 import app.test.com.testapp.activities.SearchActivity;
 import app.test.com.testapp.models.BookModel;
+import app.test.com.testapp.widget.CircularImageView;
 
 /**
  * Adapter for {@link RecyclerView}
@@ -76,7 +76,7 @@ public class SearchRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
 
         private final BookListener mListener;
         private final View mContainer;
-        private final ImageView mImage;
+        private final CircularImageView mImage;
         private final TextView mTitle;
         private final TextView mBookPublishedDate;
         private final TextView mBookId;
@@ -85,15 +85,15 @@ public class SearchRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
             super(itemView);
             mListener = listener;
             mContainer = itemView;
-            mImage = (ImageView) itemView.findViewById(R.id.bookImage);
-            mTitle = (TextView) itemView.findViewById(R.id.bookTitle);
-            mBookPublishedDate = (TextView) itemView.findViewById(R.id.bookPublishedDate);
-            mBookId = (TextView) itemView.findViewById(R.id.bookId);
+            mImage = itemView.findViewById(R.id.bookImage);
+            mTitle = itemView.findViewById(R.id.bookTitle);
+            mBookPublishedDate = itemView.findViewById(R.id.bookPublishedDate);
+            mBookId = itemView.findViewById(R.id.bookId);
         }
 
         private void bind(final BookModel model) {
 
-            mImage.setImageResource(R.mipmap.ic_launcher_round);
+            mImage.displayImage(model.getVolumeInfo().getImageLinks().getThumbnail(), true, false);
             mTitle.setText(model.getVolumeInfo().getTitle());
             mBookPublishedDate.setText(String.valueOf(model.getVolumeInfo().getPublishedDate()));
             mBookId.setText(String.valueOf(model.getId()));

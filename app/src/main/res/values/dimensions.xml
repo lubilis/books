@@ -13,7 +13,8 @@
     <dimen name="h4_size">11sp</dimen>
     <dimen name="h5_size">10sp</dimen>
 
-    <!-- progress dialog icon -->
+    <!-- icons -->
     <dimen name="progress_icon_size">48dp</dimen>
+    <dimen name="book_thumb_size">48dp</dimen>
 
 </resources>
