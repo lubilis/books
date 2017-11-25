@@ -85,7 +85,7 @@ public class SearchRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
             super(itemView);
             mListener = listener;
             mContainer = itemView;
-            mImage = itemView.findViewById(R.id.bookImage);
+            mImage = itemView.findViewById(R.id.bookThumb);
             mTitle = itemView.findViewById(R.id.bookTitle);
             mBookPublishedDate = itemView.findViewById(R.id.bookPublishedDate);
             mBookId = itemView.findViewById(R.id.bookId);
@@ -93,7 +93,7 @@ public class SearchRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
 
         private void bind(final BookModel model) {
 
-            mImage.displayImage(model.getVolumeInfo().getImageLinks().getThumbnail(), true, false);
+            mImage.displayImage(model.getVolumeInfo().getImageLinks().getSmallThumbnailFallback(), true, false);
             mTitle.setText(model.getVolumeInfo().getTitle());
             mBookPublishedDate.setText(String.valueOf(model.getVolumeInfo().getPublishedDate()));
             mBookId.setText(String.valueOf(model.getId()));

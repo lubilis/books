@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tt="http://schemas.android.com/apk/res-auto"
+    xmlns:test="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/selector"
@@ -7,17 +7,17 @@
     android:padding="@dimen/margin">
 
     <app.test.com.testapp.widget.CircularImageView
-        android:id="@+id/bookImage"
+        android:id="@+id/bookThumb"
         android:layout_width="@dimen/book_thumb_size"
         android:layout_height="@dimen/book_thumb_size"
         android:contentDescription="@string/book_image"
-        tt:border="true"
-        tt:border_color="@color/colorPrimary"
-        tt:border_width="2dp"
-        tt:selector_color="@color/colorAccent"
-        tt:selector_stroke_color="@color/colorPrimaryDark"
-        tt:selector_stroke_width="5dp"
-        tt:shadow="true" />
+        test:border="true"
+        test:border_color="@color/colorPrimary"
+        test:border_width="2dp"
+        test:selector_color="@color/colorAccent"
+        test:selector_stroke_color="@color/colorPrimaryDark"
+        test:selector_stroke_width="5dp"
+        test:shadow="true" />
 
     <LinearLayout
         android:layout_width="0dp"

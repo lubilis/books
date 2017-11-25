@@ -13,7 +13,6 @@
         android:orientation="vertical"
         tools:ignore="UselessParent">
 
-
         <android.support.design.widget.CoordinatorLayout
             android:id="@+id/coordinatorLayout"
             android:layout_width="match_parent"
@@ -49,7 +48,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin"
                             android:fitsSystemWindows="true"
-                            android:gravity="center"
+                            android:gravity="start"
                             android:text="@string/search"
                             android:textColor="@android:color/black"
                             android:textSize="@dimen/h2_size"
@@ -61,7 +60,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/margin"
                             android:fitsSystemWindows="true"
-                            android:gravity="center"
+                            android:gravity="start"
                             android:hint="@string/search_books"
                             android:imeOptions="actionSearch"
                             android:inputType="textNoSuggestions"

@@ -1,5 +1,6 @@
 package app.test.com.testapp.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -37,6 +38,8 @@ public class SearchActivity extends BaseActivity implements TestAsyncTask.TestAs
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
+
+        setActionBarTitle(getString(R.string.app_name));
 
         prepare();
     }
@@ -145,8 +148,11 @@ public class SearchActivity extends BaseActivity implements TestAsyncTask.TestAs
 
     @Override
     public void onBookClicked(BookModel model) {
-        // TODO currently showing something for test..
-        String message = String.format(getResources().getString(R.string.book), model.getVolumeInfo().getTitle());
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(BookActivity.BOOK_EXTRA, model);
+
+        Intent intent = new Intent(this, BookActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

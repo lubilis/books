@@ -5,4 +5,8 @@
     <string name="books_not_found">Nessun libro trovato per la parola \'%1$s\'</string>
     <string name="book">Libro: %1$s</string>
     <string name="book_image">Immagine del libro</string>
+    <string name="title">Titolo</string>
+    <string name="authors">Autori</string>
+    <string name="book_id">ID Libro</string>
+    <string name="published_date">Data di publicazione</string>
 </resources>

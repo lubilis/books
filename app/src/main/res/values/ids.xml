@@ -3,6 +3,7 @@
 
     <!-- ids -->
     <item name="root_layout" type="id" />
+    <item name="root_content" type="id" />
     <item name="toolbar" type="id" />
     <item name="progress_dialog" type="id" />
 

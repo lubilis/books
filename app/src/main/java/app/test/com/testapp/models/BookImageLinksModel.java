@@ -1,5 +1,7 @@
 package app.test.com.testapp.models;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
@@ -8,10 +10,26 @@ import android.text.TextUtils;
  *
  * @author omar.brugna
  */
-public class BookImageLinksModel {
+public class BookImageLinksModel implements Parcelable {
 
+    public static final Creator<BookImageLinksModel> CREATOR = new Creator<BookImageLinksModel>() {
+        @Override
+        public BookImageLinksModel createFromParcel(Parcel in) {
+            return new BookImageLinksModel(in);
+        }
+
+        @Override
+        public BookImageLinksModel[] newArray(int size) {
+            return new BookImageLinksModel[size];
+        }
+    };
     private String smallThumbnail;
     private String thumbnail;
+
+    protected BookImageLinksModel(Parcel in) {
+        smallThumbnail = in.readString();
+        thumbnail = in.readString();
+    }
 
     /**
      * Check if model is valid according to some fields
@@ -44,5 +62,16 @@ public class BookImageLinksModel {
      */
     public String getSmallThumbnailFallback() {
         return smallThumbnail != null ? smallThumbnail : thumbnail;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(smallThumbnail);
+        dest.writeString(thumbnail);
     }
 }

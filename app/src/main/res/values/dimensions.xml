@@ -16,5 +16,9 @@
     <!-- icons -->
     <dimen name="progress_icon_size">48dp</dimen>
     <dimen name="book_thumb_size">48dp</dimen>
+    <dimen name="book_image_size">96dp</dimen>
+
+    <!-- elevation -->
+    <dimen name="default_elevation">1dp</dimen>
 
 </resources>
