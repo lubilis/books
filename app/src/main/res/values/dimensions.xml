@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- test margin -->
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+
+    <!-- texts -->
+    <dimen name="fallback_title_size">18sp</dimen>
+    <dimen name="h1_size">16sp</dimen>
+    <dimen name="h2_size">14sp</dimen>
+    <dimen name="h3_size">13sp</dimen>
+    <dimen name="h4_size">11sp</dimen>
+    <dimen name="h5_size">10sp</dimen>
+
+    <!-- progress dialog icon -->
+    <dimen name="progress_icon_size">48dp</dimen>
+
+</resources>

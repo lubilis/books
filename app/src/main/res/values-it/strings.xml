@@ -1,0 +1,8 @@
+<resources>
+    <string name="search_books">Cerca libri..</string>
+    <string name="search">Cerca</string>
+    <string name="network_error_or_books_not_found">Errore di rete oppure nessun libro trovato per la parola \'%1$s\'</string>
+    <string name="books_not_found">Nessun libro trovato per la parola \'%1$s\'</string>
+    <string name="book">Libro: %1$s</string>
+    <string name="book_image">Immagine del libro</string>
+</resources>

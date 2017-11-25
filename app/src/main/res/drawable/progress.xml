@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list>
+
+    <!-- TODO change test spinner icon :) -->
+    <item xmlns:android="http://schemas.android.com/apk/res/android">
+        <rotate
+            android:drawable="@mipmap/ic_launcher_round"
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="1080" />
+    </item>
+
+</layer-list>

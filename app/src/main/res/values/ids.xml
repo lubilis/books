@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ids -->
+    <item name="root_layout" type="id" />
+    <item name="toolbar" type="id" />
+    <item name="progress_dialog" type="id" />
+
+</resources>

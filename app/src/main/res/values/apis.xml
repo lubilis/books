@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="google_books_api" translatable="false">https://www.googleapis.com/books/v1/volumes?q=%1$s</string>
+
+</resources>
